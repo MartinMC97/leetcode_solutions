@@ -4,7 +4,7 @@ class Solution {
 public:
     int findRadius(vector<int>& houses, vector<int>& heaters) {
         std::sort(houses.begin(), houses.end());
-        std:;sort(heaters.begin(), heaters.end());
+        std::sort(heaters.begin(), heaters.end());
         vector<int> res(houses.size(), INT_MAX);
         
         for(int i = 0, h = 0; i < houses.size() && h < heaters.size();){
